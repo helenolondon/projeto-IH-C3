@@ -25,7 +25,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/imagens"
             ],
             "styles": [
               "src/styles.scss"
@@ -89,6 +90,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
+              "src/assets/imagens",
               "src/assets"
             ],
             "styles": [
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "c3-ih"
+    }
+  },
+  "defaultProject": "c3-ih",
+  "cli": {
+    "analytics": "2d9196c6-2760-4ea1-ad43-b1acc72039da"
+  }
 }

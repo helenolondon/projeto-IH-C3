@@ -1,0 +1,71 @@
+#item-container{
+    height: 312px;
+    border: 1px solid;
+    width: 296px;
+    float: left;
+    margin: 0px 4px 4px 0px;
+}
+
+#item-speaker{
+    margin: 10px 0px 0px 135px;
+}
+
+#item-image{
+    margin-top: 10px;
+    img{
+        margin-left: 86px;
+        height: 120px;
+        width: 120px;
+    }
+}
+
+#item-texto, #item-preco{
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;;
+}
+
+#item-preco{
+    font-size: 25px;
+}
+
+#item-quantidade {
+    margin-top: 20px;
+
+    .text-icon {
+        margin-top: 1px;
+       
+        margin-left: -45px;
+        float: left;
+        transition: right 0.2s;
+
+        img{
+            height:  19px;
+        }
+      }
+
+    input{
+        text-align: center;
+        margin-left: 8px;
+        margin-right: 8px;
+        height: 35px;
+        width: 125px;
+        float: left;
+    }
+}
+
+#item-adicionar-button{
+    button{
+        float: right;
+        margin-right: 8px;
+        width: 142px;
+        font-weight: bolder;
+        border-style: none;
+        background-color: #1c304a;
+        color: white;
+        outline: none;
+        height: 35px;
+    }
+}
