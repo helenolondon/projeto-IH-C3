@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdutosService } from '../produtos.service';
+import { SisService } from '../sis.service';
 
 @Component({
   selector: 'app-prateleira',
@@ -8,8 +9,12 @@ import { ProdutosService } from '../produtos.service';
 })
 export class PrateleiraComponent implements OnInit {
   produtos: any[];
+  
+  constructor(private service: ProdutosService, private sisService: SisService) { }
 
-  constructor(private service: ProdutosService) { }
+  showMenus(){
+    return this.sisService.showMenus;
+  }
 
   ngOnInit(): void {
     this.produtos = this.service.getProdutosPorcategoria(null);

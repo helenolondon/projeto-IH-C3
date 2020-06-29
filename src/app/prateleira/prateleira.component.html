@@ -1,14 +1,22 @@
+<div id="prat-total-carrinho" [hidden]="!showMenus()">
+    TOTAL: R$ 0,00
+    </div>
+
+    <div id="prat-categorias-menu" [hidden]="!showMenus()" >
+        <div id="menus-div">
+            <button class="sis-menu">Refeições</button>
+            <button class="sis-menu">Alimentos</button>
+            <button class="sis-menu">Bebidas</button>
+            <button class="sis-menu">Limpeza</button>
+        </div>
+        
+        <div id="prat-pesquisar" >
+            <input type="text" placeholder="Pesquisar">
+            <span class="text-icon"><img id="img-logo" src="assets/imagens/icone-input.png"></span>
+            
+            <button>PAGAR</button>
+        </div>
+</div>
 <span *ngFor="let produto of produtos">
     <prat-item [imagem]="produto.imagem" [texto]="produto.texto" [preco]="produto.preco"></prat-item>
 </span>
-
-
-
-<!-- <prat-item [imagem]="'../../../assets/imagens/produtos/Barriguinha de porco.png'" [texto]="'Barriguinha de porco'" [preco]="'50.20'"></prat-item>
-<prat-item></prat-item>
-<prat-item></prat-item>
-<prat-item></prat-item>
-<prat-item></prat-item>
-<prat-item></prat-item>
-<prat-item></prat-item>
-<prat-item></prat-item> -->

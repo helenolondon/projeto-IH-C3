@@ -5,38 +5,17 @@ html{
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  #prat-display{
-      padding-top: 5px;
-      height: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;      
-      
-    @media (max-width: 1146px){
-        width: 920px;
-    }   
-      
-    @media (max-width: 892px){
-        width: 650px;
-    }  
-
-    @media (max-width: 550px){
-        width: 300px;
-    }  
+    
   }
 
   #prat-header-conteiner{
-    height: 117px;
+    
     max-width: 1200px;
     width: 100%;
     
     margin-left: auto;
     margin-right: auto;
-
-    border-bottom: 1px solid;
-
+    
     #prat-header-div{
         height: 44px;
         width: 100%;
@@ -50,6 +29,7 @@ html{
         width: 250px;
         padding-top: 5px;
         padding-left: 5px;
+        cursor: pointer;
         
 
         #img-logo{
@@ -80,7 +60,7 @@ html{
     #prat-header-menu{
         float: right;
         height: 35px;
-        width: 300px;
+        width: 400px;
         margin-top: 2px;
         padding-right: 5px;
 
@@ -102,100 +82,29 @@ html{
         }
     }
 
-    #prat-categorias-menu{
-        height: 40px;
-        width: 50%;
-        margin-top: 2px;
-        padding-right: 0px;
+}
 
-        :first-child{
-            padding-left: 0px;
-            margin-left: 0px;
-        }
+#prat-display{
+    padding-top: 5px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    
+  @media (max-width: 1146px){
+      width: 920px;
+  }   
+    
+  @media (max-width: 892px){
+      width: 650px;
+  }  
 
-        button{
-            border-style: none;
-            background-color: transparent;
-            color:#1c304a;
-            font-weight: bold;
-            outline: none;
-            padding: 0;
-            height: 25px;
-            margin-left: 15px;
-            height: 40px;
+  @media (max-width: 550px){
+      width: 300px;
+  }  
+}
 
-            &:hover{
-                height: 31px;
-                border-bottom: 2px solid;
-            }
-        }
-
-        @media (max-width: 780px) {
-            .sis-menu{
-                display: none;
-            }
-        }
-    }
-
-    #prat-total-carrinho{
-        margin-top: 5px;
-        float: right;
-    }
-
-    #prat-categorias-menu{
-        margin-top: 35px;
-        width: 100%;
-    }
-
-    #menus-div{
-        float: left;
-    }
-
-    #prat-pesquisar{
-        display: inline-block;
-        position: relative;
-        overflow: hidden;
-        float: right;
-
-        .text-icon {
-            position: absolute;
-            margin-top: 1px;
-           
-            right: 160px;
-            transition: right 0.2s;
-
-            img{
-                height:  19px;
-            }
-          }
-
-        input{
-            width: 300px;
-            @media (max-width: 780px) {
-                width: 328px;
-            }
-        }
-        
-        button{
-            margin-left: 8px;
-            border-radius: 2.5px;
-            float: right;
-            border: none;
-            background-color: #1c304a;
-            color: white;
-            height: 29px;
-            width: 145px;
-            &hover{
-                outline: none;
-            }
-        }
-    }
-
-    #prat-pagar{
-        float: right;
-        width: 20%;
-        button{
-            float: right;
-        }
-    }
+.com-menu{
+    border-bottom: 1px solid;
+    height: 37px
 }

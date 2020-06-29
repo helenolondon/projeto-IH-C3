@@ -1,0 +1,114 @@
+#menu{
+    width: 100%;
+    border-bottom: 1px solid;
+    height: 38px;
+    margin-bottom: 5px;
+}
+
+#prat-categorias-menu{
+    height: 40px;
+    width: 50%;
+    margin-top: 2px;
+    padding-right: 0px;
+
+    :first-child{
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    button{
+        border-style: none;
+        background-color: transparent;
+        color:#1c304a;
+        font-weight: bold;
+        outline: none;
+        padding: 0;
+        height: 25px;
+        margin-left: 15px;
+        height: 40px;
+
+        &:hover{
+            height: 31px;
+            border-bottom: 2px solid;
+        }
+    }
+
+    @media (max-width: 780px) {
+        .sis-menu{
+            display: none;
+        }
+    }
+}
+
+#prat-total-carrinho{
+    margin-top: 5px;
+    float: right;
+}
+
+#prat-categorias-menu{
+    margin-top: 35px;
+    width: 100%;
+}
+
+#menus-div{
+    float: left;
+}
+
+#prat-pesquisar{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    float: right;
+
+    .text-icon {
+        position: absolute;
+        margin-top: 1px;
+       
+        right: 160px;
+        transition: right 0.2s;
+
+        img{
+            height:  19px;
+        }
+      }
+
+      @media (max-width: 780px) {
+        width: 360px;
+    }
+
+    input{
+        width: 205px;
+        @media (max-width: 375px) {
+            width: 208px;
+        }
+
+        @media (min-width: 836px) {
+            width: 350px;
+        }
+    }
+    
+    button{
+        margin-left: 8px;
+        border-radius: 2.5px;
+        float: right;
+        border: none;
+        background-color: #1c304a;
+        color: white;
+        height: 29px;
+        width: 145px;
+        &hover{
+            outline: none;
+        }
+        @media (max-width: 380px) {
+            width: 115px;
+        }
+    }
+}
+
+#prat-pagar{
+    float: right;
+    width: 20%;
+    button{
+        float: right;
+    }
+}
